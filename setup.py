@@ -9,19 +9,21 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-hosted-plugins',
-    version='0.1',
+    version='0.1.1',
     description='Self host third-party plugins that work alongside your project.',
     long_description=README,
     url='https://pypi.python.org/pypi/django-hosted-plugins/',
     author='Vimal Aravindashan',
     author_email='vimal.aravindashan@gmail.com',
-    license='MIT License',
+    license='MIT',
     install_requires=[
         'django>=1.8,<2',
         'djangorestframework>=3.0,<3.4',
     ],
     packages=find_packages(),
+    zip_safe=False,
     include_package_data=True,
+    platforms='any',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
