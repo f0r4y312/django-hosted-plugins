@@ -91,5 +91,5 @@ ENV/
 # Eclipse project settings
 .project
 .pydevproject
-.settings
+.settings/
 
